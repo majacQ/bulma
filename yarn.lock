@@ -3,6 +3,11 @@
 
 
 "@babel/code-frame@^7.0.0":
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
+  version "7.16.7"
+  resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz"
+  dependencies:
+  =======
   <<<<<<< dependabot/npm_and_yarn/docs/nanoid-3.3.4
   "integrity" "sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg=="
   "resolved" "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz"
@@ -1902,6 +1907,7 @@
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.16.7.tgz"
   dependencies:
+  >>>>>>> 2107-sass-survey
     "@babel/highlight" "^7.16.7"
 
 "@babel/helper-validator-identifier@^7.16.7":
@@ -2336,11 +2342,19 @@ encoding@^0.1.12:
   resolved "https://registry.npmjs.org/encoding/-/encoding-0.1.13.tgz"
   dependencies:
     iconv-lite "^0.6.2"
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
 
 env-paths@^2.2.0:
   version "2.2.1"
   resolved "https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz"
 
+  =======
+
+env-paths@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz"
+
+  >>>>>>> 2107-sass-survey
 err-code@^2.0.2:
   version "2.0.3"
   resolved "https://registry.npmjs.org/err-code/-/err-code-2.0.3.tgz"
@@ -2441,11 +2455,19 @@ fs.realpath@^1.0.0:
 fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
 
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
 
+  =======
+
+function-bind@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
+
+  >>>>>>> 2107-sass-survey
 gauge@^3.0.0:
   version "3.0.2"
   resolved "https://registry.npmjs.org/gauge/-/gauge-3.0.2.tgz"
@@ -2773,8 +2795,13 @@ locate-path@^5.0.0:
     p-locate "^4.1.0"
 
 lodash@^4.17.11, lodash@^4.17.15, lodash@~4.17.12:
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  =======
   version "4.17.20"
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
+  >>>>>>> 2107-sass-survey
 
 lru-cache@^6.0.0:
   version "6.0.0"
@@ -3338,6 +3365,7 @@ shebang-regex@^3.0.0:
 signal-exit@^3.0.0:
   version "3.0.6"
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.6.tgz"
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
 
 slash@^4.0.0:
   version "4.0.0"
@@ -3359,6 +3387,29 @@ socks@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npmjs.org/socks/-/socks-2.6.1.tgz"
   dependencies:
+  =======
+
+slash@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
+
+smart-buffer@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
+
+socks-proxy-agent@^6.0.0:
+  version "6.1.1"
+  resolved "https://registry.npmjs.org/socks-proxy-agent/-/socks-proxy-agent-6.1.1.tgz"
+  dependencies:
+    agent-base "^6.0.2"
+    debug "^4.3.1"
+    socks "^2.6.1"
+
+socks@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.npmjs.org/socks/-/socks-2.6.1.tgz"
+  dependencies:
+  >>>>>>> 2107-sass-survey
     ip "^1.1.5"
     smart-buffer "^4.1.0"
 
@@ -3588,11 +3639,19 @@ wrap-ansi@^7.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
 
 y18n@^5.0.5:
   version "5.0.8"
   resolved "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz"
 
+  =======
+
+y18n@^5.0.5:
+  version "5.0.8"
+  resolved "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz"
+
+  >>>>>>> 2107-sass-survey
 yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
@@ -3604,6 +3663,24 @@ yaml@^1.10.2:
 yargs-parser@^20.2.3:
   version "20.2.9"
   resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz"
+  <<<<<<< dependabot/npm_and_yarn/lodash-4.17.21
+
+yargs-parser@^21.0.0:
+  version "21.0.0"
+  resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.0.0.tgz"
+
+yargs@^17.0.0, yargs@^17.2.1:
+  version "17.3.1"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-17.3.1.tgz"
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.3"
+    y18n "^5.0.5"
+    yargs-parser "^21.0.0"
+  =======
 
 yargs-parser@^21.0.0:
   version "21.0.0"
@@ -5657,5 +5734,6 @@ yargs@^17.0.0, yargs@^17.2.1:
     "yargs-parser" "^21.0.0"
   <<<<<<< dependabot/npm_and_yarn/docs/nanoid-3.3.4
   =======
+  >>>>>>> 2107-sass-survey
   >>>>>>> 2107-sass-survey
   >>>>>>> 2107-sass-survey
