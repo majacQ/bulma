@@ -330,6 +330,36 @@ $button-static-border-color: $border !default
         margin-right: 0.25rem
 
 .vbuttons
+  <<<<<<< css-variables
+  display: flex
+  flex-wrap: wrap
+  .vbutton
+    margin: 0 1em 1em 0
+
+.vbutton
+  --cssvar-background-color: #{$button-background-color}
+  --cssvar-border-color: #{$button-border-color}
+  --cssvar-color: #{$button-color}
+  --cssvar-hover-border-color: #{$button-hover-border-color}
+  --cssvar-hover-color: #{$button-hover-color}
+  --cssvar-focus-border-color: #{$button-focus-border-color}
+  --cssvar-focus-color: #{$button-focus-color}
+  --cssvar-focus-box-shadow-color: #{$button-focus-box-shadow-color}
+  --cssvar-active-border-color: #{$button-active-border-color}
+  --cssvar-active-color: #{$button-active-color}
+  --cssvar-outlined-color: #{$button-color}
+  --cssvar-outlined-hover-background-color: #{$button-color}
+  --cssvar-outlined-hover-color: #{$button-color-invert}
+  --cssvar-outlined-active-background-color: #{darken($button-color, 5%)}
+  --cssvar-outlined-active-color: #{$button-color-invert}
+  --cssvar-outlined-focus-box-shadow-color: #{$border}
+  @extend %control
+  @extend %unselectable
+  background-color: var(--cssvar-background-color)
+  border-color: var(--cssvar-border-color)
+  border-width: $button-border-width
+  color: var(--cssvar-color)
+  =======
   align-items: center
   display: flex
   flex-wrap: wrap
@@ -362,6 +392,7 @@ $button-static-border-color: $border !default
   border-color: var(--border-color)
   border-width: $button-border-width
   color: var(--color)
+  >>>>>>> cssvars-hsl
   cursor: pointer
   @if $button-family
     font-family: $button-family
@@ -392,6 +423,31 @@ $button-static-border-color: $border !default
       margin-right: calc(-0.375em - #{$button-border-width})
   &:hover,
   &.is-hovered
+  <<<<<<< css-variables
+    background-color: var(--cssvar-hover-background-color)
+    border-color: var(--cssvar-hover-border-color)
+    color: var(--cssvar-hover-color)
+  &:focus,
+  &.is-focused
+    border-color: var(--cssvar-focus-border-color)
+    &:not(:active)
+      box-shadow: $button-focus-box-shadow-size #{var(--cssvar-focus-box-shadow-color)}
+  &:active,
+  &.is-active
+    background-color: var(--cssvar-active-background-color)
+    border-color: var(--cssvar-active-border-color)
+    color: var(--cssvar-active-color)
+  &.is-outlined
+    --cssvar-background-color: transparent
+    --cssvar-border-color: #{$button-color}
+    --cssvar-color: #{$button-color}
+    --cssvar-hover-background-color: #{$button-color}
+    --cssvar-hover-color: #{$button-color-invert}
+    --cssvar-active-background-color: #{darken($button-color, 5%)}
+    --cssvar-active-color: #{$button-color-invert}
+    --cssvar-focus-border-color: #{$button-color}
+    --cssvar-focus-box-shadow-color: #{$border}
+  =======
     background-color: var(--hover-background-color)
     border-color: var(--hover-border-color)
     color: var(--hover-color)
@@ -415,6 +471,7 @@ $button-static-border-color: $border !default
     --active-color: #{$button-color-invert}
     --focus-border-color: #{$button-color}
     --focus-box-shadow-color: #{$border}
+  >>>>>>> cssvars-hsl
     &:not(:hover):not(.is-hovered):not(:active):not(.is-active)
       background-color: transparent
     &:not(.is-inverted):not([disabled])
@@ -426,6 +483,22 @@ $button-static-border-color: $border !default
   &.is-outlined.is-inverted
     background-color: transparent
   &.is-text
+  <<<<<<< css-variables
+    --cssvar-background-color: transparent
+    --cssvar-border-color: transparent
+    --cssvar-color: #{$text}
+    --cssvar-hover-background-color: #{$button-text-hover-background-color}
+    --cssvar-hover-border-color: transparent
+    --cssvar-hover-color: #{$button-text-hover-color}
+    --cssvar-focus-background-color: #{$button-text-focus-background-color}
+    --cssvar-focus-border-color: transparent
+    --cssvar-focus-border-color: #{$button-text-focus-border-color}
+    --cssvar-focus-color: #{$button-text-focus-color}
+    --cssvar-focus-box-shadow-color: #{$button-text-focus-box-shadow-color}
+    --cssvar-active-background-color: #{$button-text-active-background-color}
+    --cssvar-active-border-color: transparent
+    --cssvar-active-color: #{$button-text-active-color}
+  =======
     --background-color: transparent
     --border-color: transparent
     --color: #{$text}
@@ -440,10 +513,63 @@ $button-static-border-color: $border !default
     --active-background-color: #{$button-text-active-background-color}
     --active-border-color: transparent
     --active-color: #{$button-text-active-color}
+  >>>>>>> cssvars-hsl
     text-decoration: underline
   @each $name, $trio in $colors
     $base: "#{$prefix}#{$name}"
     &.is-#{$name}
+  <<<<<<< css-variables
+      --cssvar-background-color: var(--#{$base})
+      --cssvar-border-color: transparent
+      --cssvar-color: var(--#{$base}-invert)
+      --cssvar-hover-background-color: var(--#{$base}-hover)
+      --cssvar-hover-border-color: transparent
+      --cssvar-hover-color: var(--#{$base}-invert)
+      --cssvar-focus-background-color: var(--#{$base})
+      --cssvar-focus-border-color: transparent
+      --cssvar-focus-color: var(--#{$base}-invert)
+      --cssvar-focus-box-shadow-color: hsl(var(--#{$base}-h), calc(var(--#{$base}-s)), 86%)
+      --cssvar-active-background-color: var(--#{$base}-active)
+      --cssvar-active-border-color: transparent
+      --cssvar-active-color: var(--#{$base}-invert)
+      --cssvar-outlined-color: var(--#{$base})
+      &.is-inverted
+        --cssvar-background-color: var(--#{$base}-invert)
+        --cssvar-color: var(--#{$base})
+        --cssvar-hover-background-color: var(--#{$base}-invert)
+        --cssvar-hover-color: var(--#{$base}-hover)
+        --cssvar-active-background-color: var(--#{$base}-invert)
+        --cssvar-active-color: var(--#{$base}-active)
+      &.is-outlined
+        --cssvar-background-color: transparent
+        --cssvar-border-color: var(--#{$base})
+        --cssvar-color: var(--#{$base})
+        --cssvar-hover-background-color: var(--#{$base})
+        --cssvar-focus-border-color: var(--#{$base})
+      &.is-outlined.is-inverted
+        --cssvar-background-color: transparent
+        --cssvar-border-color: var(--#{$base}-invert)
+        --cssvar-color: var(--#{$base}-invert)
+        --cssvar-hover-border-color: var(--#{$base}-hover)
+        --cssvar-hover-color: var(--#{$base}-invert)
+        --cssvar-active-border-color: var(--#{$base}-active)
+        --cssvar-active-color: var(--#{$base}-active)
+        --cssvar-focus-box-shadow-color: hsl(var(--#{$base}-h), calc(var(--#{$base}-s)), 14%)
+      &.is-light
+        --cssvar-background-color: var(--#{$base}-light)
+        --cssvar-border-color: transparent
+        --cssvar-color: var(--#{$base}-dark)
+        --cssvar-hover-background-color: var(--#{$base}-light-hover)
+        --cssvar-hover-border-color: transparent
+        --cssvar-hover-color: var(--#{$base}-dark)
+        --cssvar-focus-background-color: var(--#{$base}-light)
+        --cssvar-focus-border-color: transparent
+        --cssvar-focus-color: var(--#{$base}-dark)
+        --cssvar-focus-box-shadow-color: hsl(var(--#{$base}-h), calc(var(--#{$base}-s)), 86%)
+        --cssvar-active-background-color: var(--#{$base}-light-active)
+        --cssvar-active-border-color: transparent
+        --cssvar-active-color: var(--#{$base}-dark)
+  =======
       --background-color: var(--#{$base})
       --border-color: transparent
       --color: var(--#{$base}-invert)
@@ -494,6 +620,7 @@ $button-static-border-color: $border !default
         --active-background-color: var(--#{$base}-light-active)
         --active-border-color: transparent
         --active-color: var(--#{$base}-dark)
+  >>>>>>> cssvars-hsl
   // Sizes
   &.is-small
     +button-small
@@ -506,9 +633,15 @@ $button-static-border-color: $border !default
   // Modifiers
   &[disabled],
   fieldset[disabled] &
+  <<<<<<< css-variables
+    --cssvar-hover-background-color: var(--cssvar-background-color) !important
+    --cssvar-hover-border-color: var(--cssvar-border-color) !important
+    --cssvar-hover-color: var(--cssvar-color) !important
+  =======
     --hover-background-color: var(--background-color) !important
     --hover-border-color: var(--border-color) !important
     --hover-color: var(--color) !important
+  >>>>>>> cssvars-hsl
     opacity: $button-disabled-opacity
   &.is-fullwidth
     display: flex
@@ -519,12 +652,21 @@ $button-static-border-color: $border !default
     &::after
       @extend %loader
       +center(1em)
+  <<<<<<< css-variables
+      border-color: transparent transparent var(--cssvar-color) var(--cssvar-color) !important
+      position: absolute !important
+  &.is-static
+    --cssvar-background-color: #{$button-static-background-color}
+    --cssvar-border-color: #{$button-static-border-color}
+    --cssvar-color: #{$button-static-color}
+  =======
       border-color: transparent transparent var(--color) var(--color) !important
       position: absolute !important
   &.is-static
     --background-color: #{$button-static-background-color}
     --border-color: #{$button-static-border-color}
     --color: #{$button-static-color}
+  >>>>>>> cssvars-hsl
     box-shadow: none
     pointer-events: none
   &.is-rounded
